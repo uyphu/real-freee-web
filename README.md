@@ -1,54 +1,58 @@
-# React + TypeScript + Vite
+# REAL FREEE 🌱
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A community-powered platform where people can give and receive free items with ease. Reduce waste, help others, and earn points for every act of giving.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🖥️ Tech Stack
 
-## Expanding the ESLint configuration
+- ⚛️ React 18
+- ⚡ Vite (build tool)
+- 🎨 Tailwind CSS (utility-first UI)
+- 🔀 React Router DOM
+- ✅ TypeScript
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 📦 Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### ✅ Public
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- 🏠 Home Page with recent free items
+- 🔎 Browse items by category or location
+- 🔐 Login / Register
+- 📄 Item detail page
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### 👤 Giver
+
+- ➕ Post new item to give away
+- 🖼 Upload photos
+- 📍 Add pickup location and time
+- 🎁 Earn points based on item category
+
+### 🎁 Receiver
+
+- 🔍 Browse / search items
+- 📅 Schedule pickup with giver
+- 💬 Optional messaging (coming soon)
+
+### 🛡️ Admin (Planned)
+
+- 🧑‍💼 Manage users and listings
+- 🚨 Handle abuse reports
+- 📊 Platform analytics dashboard
+
+---
+
+## 🚀 Getting Started
+
+```bash
+# Clone the project
+git clone https://github.com/uyphu/real-freee-web.git
+cd real-freee-web
+
+# Install dependencies
+yarn
+
+# Start development server
+yarn dev
